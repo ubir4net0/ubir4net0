@@ -167,10 +167,10 @@ save('footer.svg', `
 // ---------------------------------------------------------------- project cards
 const projects = [
   {
-    file: 'health-platform.svg', tag: 'PRIVADO · PROJETO EM EQUIPE', title: 'Plataforma de Benefícios de Saúde',
-    desc: 'Substitui um SaaS de terceiros por uma plataforma própria: assinaturas, beneficiários, agenda de clínicas, exames e comissões de afiliados em quatro portais.',
-    mine: 'Minha parte: ledger financeiro imutável, webhooks de saída, motor de comissões, migrations e testes E2E com Playwright — 270+ commits.',
-    chips: ['NestJS', 'TypeORM', 'PostgreSQL', 'Vue 3', 'Capacitor', 'Docker', 'Playwright'],
+    file: 'health-platform.svg', tag: 'PRIVADO · PROJETO EM EQUIPE · FULL STACK', title: 'Plataforma de Saúde e Telessaúde',
+    desc: 'Plataforma de uma clínica com planos por assinatura: telessaúde, agendamento de consultas e exames, laudos online, dependentes, planos para empresas e rede de afiliados, em app mobile e quatro portais web.',
+    mine: 'Full stack (API NestJS + telas Vue): exames, guias e laudos; portal de empresas com importação de beneficiários; financeiro com saques, estornos e extratos; webhooks com fila e repetição; operadores, auditoria e testes E2E — 270+ commits.',
+    chips: ['NestJS', 'Vue 3', 'TypeScript', 'PostgreSQL', 'TypeORM', 'Capacitor', 'Playwright'],
   },
   {
     file: 'distributed-pos.svg', tag: 'PÚBLICO · AUTORIA PRÓPRIA · ACADÊMICO', title: 'PDV Distribuído', link: true,
@@ -223,10 +223,10 @@ function layout(p) {
   }
   return { descSvg, mineSvg, arrowY, chips, bottom: Math.max(y - 20 + 8, cy + 26) };
 }
-const CH = Math.max(...projects.map((p) => layout(p).bottom)) + 26;
+// Each card is on its own row, so height follows its own content (minimum 250).
 
 for (const p of projects) {
-  const W = CW, H = CH;
+  const W = CW, H = Math.max(250, layout(p).bottom + 26);
   const { descSvg, mineSvg, arrowY, chips } = layout(p);
   const corner = p.link
     ? `<text x="${SPLIT - 28}" y="46" text-anchor="end" fill="${C.blue}" font-family="${SANS}" font-size="22">↗</text>`
