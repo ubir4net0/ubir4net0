@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">Ubirajara Neto — Full Stack Developer</title>
+  <desc id="desc">Full Stack Developer from Manaus, Brazil. Building web systems end to end: APIs, interfaces and the pipelines that keep them shipping.</desc>
+  <defs>
+    <linearGradient id="accent" x1="0" x2="1"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#00BFFF"/></linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#1F2A37"/></pattern>
+    <radialGradient id="glow" cx="0.78" cy="0.45" r="0.55"><stop offset="0" stop-color="#2563EB" stop-opacity="0.22"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></radialGradient>
+    <linearGradient id="fade" x1="0" x2="1"><stop offset="0.25" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="1"/></linearGradient>
+    <mask id="dotmask"><rect width="1280" height="360" fill="url(#fade)"/></mask>
+    <clipPath id="clip"><rect width="1280" height="360" rx="18"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1280" height="360" fill="#0D1117"/>
+    <rect width="1280" height="360" fill="url(#dots)" mask="url(#dotmask)"/>
+    <rect width="1280" height="360" fill="url(#glow)"/>
+    <rect y="357" width="1280" height="3" fill="url(#accent)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1279" height="359" rx="18" fill="none" stroke="#21262D"/>
+
+  <text x="72" y="104" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="15" letter-spacing="1">~/ubir4net0 · manaus, br</text>
+  <text x="70" y="170" fill="#F0F6FC" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="60" font-weight="700" letter-spacing="-1">Ubirajara Neto</text>
+  <text x="72" y="214" fill="url(#accent)" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="27" font-weight="600">Full Stack Developer</text>
+  <text x="72" y="262" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18">Building web systems end to end — APIs, interfaces</text>
+  <text x="72" y="288" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="18">and the pipelines that keep them shipping.</text>
+
+  <rect x="772" y="64" width="444" height="236" rx="12" fill="#161B22" stroke="#30363D"/>
+  <line x1="772" y1="102" x2="1216" y2="102" stroke="#21262D"/>
+  <circle cx="794" cy="83" r="5" fill="#30363D"/>
+  <circle cx="812" cy="83" r="5" fill="#30363D"/>
+  <circle cx="830" cy="83" r="5" fill="#2563EB"/>
+  <text x="1196" y="88" text-anchor="end" fill="#8B949E" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12">profile.ts</text>
+    <text x="798" y="138" fill="#30363D" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="13">1</text>
+    <text x="824" y="138" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14.5" xml:space="preserve"><tspan fill="#5B8DEF">export const </tspan><tspan fill="#F0F6FC">dev</tspan><tspan fill="#8B949E"> = {</tspan></text>
+    <text x="798" y="160" fill="#30363D" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="13">2</text>
+    <text x="824" y="160" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14.5" xml:space="preserve"><tspan fill="#F0F6FC">  role</tspan><tspan fill="#8B949E">: </tspan><tspan fill="#00BFFF">&quot;full stack&quot;</tspan><tspan fill="#8B949E">,</tspan></text>
+    <text x="798" y="182" fill="#30363D" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="13">3</text>
+    <text x="824" y="182" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14.5" xml:space="preserve"><tspan fill="#F0F6FC">  backend</tspan><tspan fill="#8B949E">: [</tspan><tspan fill="#00BFFF">&quot;Laravel&quot;</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#00BFFF">&quot;NestJS&quot;</tspan><tspan fill="#8B949E">],</tspan></text>
+    <text x="798" y="204" fill="#30363D" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="13">4</text>
+    <text x="824" y="204" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14.5" xml:space="preserve"><tspan fill="#F0F6FC">  frontend</tspan><tspan fill="#8B949E">: [</tspan><tspan fill="#00BFFF">&quot;Vue&quot;</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#00BFFF">&quot;React&quot;</tspan><tspan fill="#8B949E">],</tspan></text>
+    <text x="798" y="226" fill="#30363D" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="13">5</text>
+    <text x="824" y="226" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14.5" xml:space="preserve"><tspan fill="#F0F6FC">  data</tspan><tspan fill="#8B949E">: [</tspan><tspan fill="#00BFFF">&quot;PostgreSQL&quot;</tspan><tspan fill="#8B949E">, </tspan><tspan fill="#00BFFF">&quot;MySQL&quot;</tspan><tspan fill="#8B949E">],</tspan></text>
+    <text x="798" y="248" fill="#30363D" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="13">6</text>
+    <text x="824" y="248" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14.5" xml:space="preserve"><tspan fill="#F0F6FC">  ships</tspan><tspan fill="#8B949E">: </tspan><tspan fill="#00BFFF">true</tspan><tspan fill="#8B949E">,</tspan></text>
+    <text x="798" y="270" fill="#30363D" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="13">7</text>
+    <text x="824" y="270" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14.5" xml:space="preserve"><tspan fill="#8B949E">};</tspan></text>
+  <rect x="845.4" y="257" width="8" height="16" fill="#00BFFF">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

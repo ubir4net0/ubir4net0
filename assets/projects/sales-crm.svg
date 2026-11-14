@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="250" viewBox="0 0 840 250" role="img" aria-labelledby="t d">
+  <title id="t">Sales CRM + LMS Integration</title>
+  <desc id="d">Commercial CRM for a training company: sales pipeline, renewals driven by certificate expiry, goals and scheduled e-mail reports. Sole author: TypeScript monorepo, typed contracts, REST sync with the LMS behind a feature flag — 172 commits. Stack: Node.js, Fastify, Kysely, MySQL, Zod, React, TanStack Query.</desc>
+  <defs><linearGradient id="accent" x1="0" x2="1"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#00BFFF"/></linearGradient></defs>
+  <rect x="0.5" y="0.5" width="839" height="249" rx="14" fill="#0D1117" stroke="#21262D"/>
+  <rect x="0" y="28" width="3" height="58" fill="url(#accent)"/>
+  <text x="32" y="45" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12" letter-spacing="1.2">PRIVATE · SOLO</text>
+  <g transform="translate(558 29)" fill="none" stroke="#8B949E" stroke-width="1.6"><rect x="1" y="7" width="14" height="10" rx="2"/><path d="M4 7V5a4 4 0 0 1 8 0v2"/></g>
+  <line x1="604" y1="24" x2="604" y2="226" stroke="#21262D"/>
+  <text x="626" y="44" fill="#8B949E" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="11.5" letter-spacing="1.2">STACK</text>
+  <text x="32" y="80" fill="#F0F6FC" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Sales CRM + LMS Integration</text>
+  <text x="32" y="114" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">Commercial CRM for a training company: sales pipeline, renewals</text>
+  <text x="32" y="137" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">driven by certificate expiry, goals and scheduled e-mail</text>
+  <text x="32" y="160" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">reports.</text>
+  <text x="32" y="195" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14">→</text>
+  <text x="52" y="195" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14">Sole author: TypeScript monorepo, typed contracts, REST sync with the</text>
+  <text x="52" y="215" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14">LMS behind a feature flag — 172 commits.</text>
+  <rect x="626" y="62" width="77" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="664.5" y="79.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">Node.js</text>
+  <rect x="711" y="62" width="77" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="749.5" y="79.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">Fastify</text>
+  <rect x="626" y="96" width="70" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="661" y="113.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">Kysely</text>
+  <rect x="704" y="96" width="62" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="735" y="113.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">MySQL</text>
+  <rect x="626" y="130" width="47" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="649.5" y="147.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">Zod</text>
+  <rect x="681" y="130" width="62" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="712" y="147.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">React</text>
+  <rect x="626" y="164" width="130" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="691" y="181.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">TanStack Query</text>
+</svg>

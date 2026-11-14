@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="250" viewBox="0 0 840 250" role="img" aria-labelledby="t d">
+  <title id="t">Distributed POS</title>
+  <desc id="d">Point-of-sale system with an independent worker: idempotent checkout, stock reservations and transactional outbox/inbox messaging. Sole author: API, worker, React UI, OpenAPI contracts, ADRs and four CI workflows with real Postgres and RabbitMQ. Stack: Java 21, Spring Boot, RabbitMQ, PostgreSQL, Flyway, React, TypeScript.</desc>
+  <defs><linearGradient id="accent" x1="0" x2="1"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#00BFFF"/></linearGradient></defs>
+  <rect x="0.5" y="0.5" width="839" height="249" rx="14" fill="#0D1117" stroke="#21262D"/>
+  <rect x="0" y="28" width="3" height="58" fill="url(#accent)"/>
+  <text x="32" y="45" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12" letter-spacing="1.2">PUBLIC · SOLO · ACADEMIC</text>
+  <text x="576" y="46" text-anchor="end" fill="#00BFFF" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="22">↗</text>
+  <line x1="604" y1="24" x2="604" y2="226" stroke="#21262D"/>
+  <text x="626" y="44" fill="#8B949E" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="11.5" letter-spacing="1.2">STACK</text>
+  <text x="32" y="80" fill="#F0F6FC" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Distributed POS</text>
+  <text x="32" y="114" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">Point-of-sale system with an independent worker: idempotent</text>
+  <text x="32" y="137" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">checkout, stock reservations and transactional outbox/inbox</text>
+  <text x="32" y="160" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">messaging.</text>
+  <text x="32" y="195" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14">→</text>
+  <text x="52" y="195" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14">Sole author: API, worker, React UI, OpenAPI contracts, ADRs and four CI</text>
+  <text x="52" y="215" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14">workflows with real Postgres and RabbitMQ.</text>
+  <rect x="626" y="62" width="77" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="664.5" y="79.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">Java 21</text>
+  <rect x="626" y="96" width="108" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="680" y="113.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">Spring Boot</text>
+  <rect x="626" y="130" width="85" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="668.5" y="147.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">RabbitMQ</text>
+  <rect x="626" y="164" width="100" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="676" y="181.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">PostgreSQL</text>
+  <rect x="734" y="164" width="70" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="769" y="181.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">Flyway</text>
+  <rect x="626" y="198" width="62" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="657" y="215.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">React</text>
+  <rect x="696" y="198" width="100" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="746" y="215.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">TypeScript</text>
+</svg>

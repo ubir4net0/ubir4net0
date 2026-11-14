@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="250" viewBox="0 0 840 250" role="img" aria-labelledby="t d">
+  <title id="t">BoitaTech</title>
+  <desc id="d">Environmental monitoring platform with 2D/3D geospatial maps, citizen reports with LGPD consent, recycling points and curated news. Finished 5th among the finalists. Includes hand-gesture map control powered by MediaPipe. Stack: Laravel, PostgreSQL, Leaflet, CesiumJS, MediaPipe, Tailwind.</desc>
+  <defs><linearGradient id="accent" x1="0" x2="1"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#00BFFF"/></linearGradient></defs>
+  <rect x="0.5" y="0.5" width="839" height="249" rx="14" fill="#0D1117" stroke="#21262D"/>
+  <rect x="0" y="28" width="3" height="58" fill="url(#accent)"/>
+  <text x="32" y="45" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12" letter-spacing="1.2">PUBLIC · INOVATECH 2026 FINALIST</text>
+  <text x="576" y="46" text-anchor="end" fill="#00BFFF" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="22">↗</text>
+  <line x1="604" y1="24" x2="604" y2="226" stroke="#21262D"/>
+  <text x="626" y="44" fill="#8B949E" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="11.5" letter-spacing="1.2">STACK</text>
+  <text x="32" y="80" fill="#F0F6FC" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="26" font-weight="700">BoitaTech</text>
+  <text x="32" y="114" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">Environmental monitoring platform with 2D/3D geospatial maps,</text>
+  <text x="32" y="137" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">citizen reports with LGPD consent, recycling points and curated</text>
+  <text x="32" y="160" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">news.</text>
+  <text x="32" y="195" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14">→</text>
+  <text x="52" y="195" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14">Finished 5th among the finalists. Includes hand-gesture map control</text>
+  <text x="52" y="215" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14">powered by MediaPipe.</text>
+  <rect x="626" y="62" width="77" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="664.5" y="79.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">Laravel</text>
+  <rect x="711" y="62" width="100" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="761" y="79.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">PostgreSQL</text>
+  <rect x="626" y="96" width="77" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="664.5" y="113.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">Leaflet</text>
+  <rect x="711" y="96" width="85" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="753.5" y="113.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">CesiumJS</text>
+  <rect x="626" y="130" width="92" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="672" y="147.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">MediaPipe</text>
+  <rect x="726" y="130" width="85" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
+  <text x="768.5" y="147.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">Tailwind</text>
+</svg>

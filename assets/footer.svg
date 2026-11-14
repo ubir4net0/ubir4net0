@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="96" viewBox="0 0 1280 96" role="img" aria-labelledby="t">
+  <title id="t">Ubirajara Neto · Full Stack Developer · Manaus, Brazil</title>
+  <defs>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop offset="0" stop-color="#2563EB" stop-opacity="0"/><stop offset="0.5" stop-color="#00BFFF"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="140" y="20" width="1000" height="1.5" fill="url(#line)"/>
+  <circle cx="640" cy="20.75" r="3.5" fill="#00BFFF"/>
+  <text x="640" y="62" text-anchor="middle" fill="#8B949E" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14" letter-spacing="1.5">ubirajara neto  ·  full stack developer  ·  manaus — br</text>
+</svg>
