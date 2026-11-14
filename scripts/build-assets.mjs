@@ -1,6 +1,7 @@
 // Regenerates the static SVGs in assets/ (banner, footer, language and activity snapshots, project cards).
 // Usage: node scripts/build-assets.mjs [outDir=assets]   — edit the data below, then rerun.
-import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, existsSync, readdirSync, unlinkSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 
 const OUT = process.argv[2] || 'assets';
@@ -218,6 +219,25 @@ const projects = [
   },
 ];
 
+// GitHub redirects README images to raw.githubusercontent.com and drops the query string,
+// so browsers keep showing old cards. Each card gets a content hash in its file name
+// instead, and README.md is updated to point at the new name.
+function saveCard(file, svg) {
+  const body = svg.trim() + '\n';
+  const base = file.replace(/\.svg$/, '');
+  const name = `${base}-${createHash('sha1').update(body).digest('hex').slice(0, 8)}.svg`;
+  const dir = join(OUT, 'projects');
+  const own = new RegExp(`^${base}(-[0-9a-f]{8})?\\.svg$`);
+  for (const old of readdirSync(dir)) if (old !== name && own.test(old)) unlinkSync(join(dir, old));
+  writeFileSync(join(dir, name), body);
+  const readme = new URL('../README.md', import.meta.url);
+  if (!existsSync(readme)) return;
+  const md = readFileSync(readme, 'utf8');
+  const ref = new RegExp(`\\./assets/projects/${base}(-[0-9a-f]{8})?\\.svg(\\?v=[^"]*)?`, 'g');
+  const next = md.replace(ref, () => `./assets/projects/${name}`);
+  if (next !== md) writeFileSync(readme, next);
+}
+
 // --- icon loading (cached in scripts/icons/)
 const ICON_DIR = new URL('./icons/', import.meta.url);
 mkdirSync(ICON_DIR, { recursive: true });
@@ -274,7 +294,7 @@ for (const p of projects) {
   const corner = p.link
     ? `<text x="${SPLIT - 28}" y="46" text-anchor="end" fill="${t.a1}" font-family="${SANS}" font-size="22">↗</text>`
     : `<g transform="translate(${SPLIT - 46} 29)" fill="none" stroke="${t.a1}" stroke-opacity="0.8" stroke-width="1.6"><rect x="1" y="7" width="14" height="10" rx="2"/><path d="M4 7V5a4 4 0 0 1 8 0v2"/></g>`;
-  save(join('projects', p.file), `
+  saveCard(p.file, `
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t d">
   <title id="t">${esc(p.title)}</title>
   <desc id="d">${esc(p.desc)} ${esc(p.mine)} Stack: ${esc(p.icons.map((i) => i[1]).join(', '))}.</desc>
