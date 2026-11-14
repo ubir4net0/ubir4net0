@@ -1,6 +1,6 @@
 // Regenerates the static SVGs in assets/ (banner, footer, language and activity snapshots, project cards).
 // Usage: node scripts/build-assets.mjs [outDir=assets]   — edit the data below, then rerun.
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
 const OUT = process.argv[2] || 'assets';
@@ -165,89 +165,142 @@ save('footer.svg', `
 }
 
 // ---------------------------------------------------------------- project cards
+// Each card has its own color theme. Icons come from Skill Icons (sk:) or Simple Icons (si:, CC0),
+// are cached in scripts/icons/ and embedded inline: GitHub serves SVGs with `default-src 'none'`,
+// so external or data: references inside an SVG would not load.
+const THEMES = {
+  wine:   { bg1: '#0D1117', bg2: '#1E0D15', line: '#3A1A27', a1: '#C2416B', a2: '#D4B07A', a3: '#B48BC8' },
+  java:   { bg1: '#0D1117', bg2: '#1C130A', line: '#3B2A16', a1: '#F89820', a2: '#F89820', a3: '#5382A1' },
+  royal:  { bg1: '#0D1117', bg2: '#0A1330', line: '#1C2D66', a1: '#3D6BFF', a2: '#4ACEFD', a3: '#F5821F' },
+  forest: { bg1: '#0D1117', bg2: '#081A10', line: '#14462A', a1: '#22C55E', a2: '#4ADE80', a3: '#86EFAC' },
+  volt:   { bg1: '#0D1117', bg2: '#17150A', line: '#3A3414', a1: '#FFCE28', a2: '#FFCE28', a3: '#12E07A' },
+  access: { bg1: '#0D1117', bg2: '#0B1426', line: '#1E3358', a1: '#3B82F6', a2: '#60A5FA', a3: '#22C55E' },
+};
+
+const SI_HEX = { typeorm: 'FE0803', capacitor: '119EFF', flyway: 'CC0200', fastify: 'FFFFFF', zod: '408AFF', tanstack: 'ECE8D1', leaflet: '199900', cesium: '6CADDF', mediapipe: '0097A7', chartdotjs: 'FF6384', alpinedotjs: '8BC0D0' };
+
 const projects = [
   {
-    file: 'health-platform.svg', tag: 'PRIVADO · PROJETO EM EQUIPE · FULL STACK', title: 'Plataforma de Saúde e Telessaúde',
+    file: 'health-platform.svg', theme: 'wine', tag: 'PRIVADO · PROJETO EM EQUIPE · FULL STACK', title: 'Plataforma de Saúde e Telessaúde',
     desc: 'Plataforma de uma clínica com planos por assinatura: telessaúde, agendamento de consultas e exames, laudos online, dependentes, planos para empresas e rede de afiliados, em app mobile e quatro portais web.',
     mine: 'Full stack (API NestJS + telas Vue): exames, guias e laudos; portal de empresas com importação de beneficiários; financeiro com saques, estornos e extratos; webhooks com fila e repetição; operadores, auditoria e testes E2E — 270+ commits.',
-    chips: ['NestJS', 'Vue 3', 'TypeScript', 'PostgreSQL', 'TypeORM', 'Capacitor', 'Playwright'],
+    icons: [['sk:nestjs', 'NestJS'], ['sk:vue', 'Vue 3'], ['sk:ts', 'TypeScript'], ['sk:postgres', 'PostgreSQL'], ['si:typeorm', 'TypeORM'], ['si:capacitor', 'Capacitor'], ['sk:docker', 'Docker'], ['sk:jest', 'Jest']],
   },
   {
-    file: 'distributed-pos.svg', tag: 'PÚBLICO · AUTORIA PRÓPRIA · ACADÊMICO', title: 'PDV Distribuído', link: true,
+    file: 'distributed-pos.svg', theme: 'java', tag: 'PÚBLICO · AUTORIA PRÓPRIA · ACADÊMICO', title: 'PDV Distribuído', link: true,
     desc: 'Sistema de ponto de venda com worker independente: checkout idempotente, reservas de estoque e mensageria transacional com outbox/inbox.',
     mine: 'Autor único: API, worker, interface React, contratos OpenAPI, ADRs e quatro workflows de CI com Postgres e RabbitMQ reais.',
-    chips: ['Java 21', 'Spring Boot', 'RabbitMQ', 'PostgreSQL', 'Flyway', 'React', 'TypeScript'],
+    icons: [['sk:java', 'Java 21'], ['sk:spring', 'Spring Boot'], ['sk:rabbitmq', 'RabbitMQ'], ['sk:postgres', 'PostgreSQL'], ['si:flyway', 'Flyway'], ['sk:react', 'React'], ['sk:ts', 'TypeScript'], ['sk:githubactions', 'GitHub Actions']],
   },
   {
-    file: 'sales-crm.svg', tag: 'PRIVADO · AUTORIA PRÓPRIA', title: 'CRM Comercial + Integração EAD',
+    file: 'sales-crm.svg', theme: 'royal', tag: 'PRIVADO · AUTORIA PRÓPRIA', title: 'CRM Comercial + Integração EAD',
     desc: 'CRM para uma empresa de treinamentos: funil de vendas, renovações pelo vencimento de certificados, metas e relatórios agendados por e-mail.',
     mine: 'Autor único: monorepo TypeScript, contratos tipados e sincronização REST com a plataforma EAD controlada por feature flag — 172 commits.',
-    chips: ['Node.js', 'Fastify', 'Kysely', 'MySQL', 'Zod', 'React', 'TanStack Query'],
+    icons: [['sk:nodejs', 'Node.js'], ['sk:ts', 'TypeScript'], ['si:fastify', 'Fastify'], ['sk:mysql', 'MySQL'], ['si:zod', 'Zod'], ['sk:react', 'React'], ['si:tanstack', 'TanStack Query'], ['sk:vite', 'Vite']],
   },
   {
-    file: 'boitatech.svg', tag: 'PÚBLICO · FINALISTA INOVATECH 2026', title: 'BoitaTech', link: true,
+    file: 'boitatech.svg', theme: 'forest', tag: 'PÚBLICO · FINALISTA INOVATECH 2026', title: 'BoitaTech', link: true,
     desc: 'Plataforma de monitoramento ambiental com mapas geoespaciais 2D/3D, denúncias cidadãs com consentimento LGPD, ecopontos e curadoria de notícias.',
     mine: '5º lugar entre os finalistas. Inclui controle do mapa por gestos das mãos com MediaPipe.',
-    chips: ['Laravel', 'PostgreSQL', 'Leaflet', 'CesiumJS', 'MediaPipe', 'Tailwind'],
+    icons: [['sk:laravel', 'Laravel'], ['sk:php', 'PHP'], ['sk:postgres', 'PostgreSQL'], ['si:leaflet', 'Leaflet'], ['si:cesium', 'CesiumJS'], ['si:mediapipe', 'MediaPipe'], ['sk:tailwind', 'Tailwind CSS'], ['sk:vite', 'Vite']],
   },
   {
-    file: 'event-api.svg', tag: 'PRIVADO · AUTORIA PRÓPRIA', title: 'API de Gestão de Eventos',
+    file: 'event-api.svg', theme: 'volt', tag: 'PRIVADO · AUTORIA PRÓPRIA', title: 'API de Gestão de Eventos',
     desc: 'API de back-office para eventos esportivos: autenticação SPA por sessão, controle de acesso por perfil, provas e modalidades, e integração com plataforma de ingressos.',
     mine: 'Filas com Redis/Horizon, análise estática com Larastan e testes de feature com PHPUnit.',
-    chips: ['Laravel 13', 'Sanctum', 'PostgreSQL', 'Redis', 'Horizon', 'PHPUnit'],
+    icons: [['sk:laravel', 'Laravel 13'], ['sk:php', 'PHP 8.4'], ['sk:postgres', 'PostgreSQL'], ['sk:redis', 'Redis']],
   },
   {
-    file: 'acesso-facil.svg', tag: 'PÚBLICO · AUTORIA PRÓPRIA', title: 'Acesso Fácil', link: true,
+    file: 'acesso-facil.svg', theme: 'access', tag: 'PÚBLICO · AUTORIA PRÓPRIA', title: 'Acesso Fácil', link: true,
     desc: 'Encontre e avalie locais acessíveis em Manaus: mapa interativo, painel analítico, avaliações e suporte a Libras com VLibras.',
     mine: 'Desenvolvido para o Inovatech: indicadores de acessibilidade, agrupamento de marcadores no mapa e gráficos.',
-    chips: ['Laravel', 'MySQL', 'Leaflet', 'Chart.js', 'Tailwind', 'Alpine.js'],
+    icons: [['sk:laravel', 'Laravel'], ['sk:php', 'PHP'], ['sk:mysql', 'MySQL'], ['si:leaflet', 'Leaflet'], ['si:chartdotjs', 'Chart.js'], ['si:alpinedotjs', 'Alpine.js'], ['sk:tailwind', 'Tailwind CSS']],
   },
 ];
 
-// Wide single-column cards: left = story, right = stack chips.
-const CW = 840, SPLIT = 604, CX0 = SPLIT + 22, CX1 = CW - 24;
+// --- icon loading (cached in scripts/icons/)
+const ICON_DIR = new URL('./icons/', import.meta.url);
+mkdirSync(ICON_DIR, { recursive: true });
+async function loadIcon(key) {
+  const [src, id] = key.split(':');
+  const cache = new URL(`${src}-${id}.svg`, ICON_DIR);
+  if (existsSync(cache)) return readFileSync(cache, 'utf8');
+  const url = src === 'sk' ? `https://skillicons.dev/icons?i=${id}&theme=dark` : `https://cdn.jsdelivr.net/npm/simple-icons@16.37.0/icons/${id}.svg`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`icon ${key}: HTTP ${res.status}`);
+  const svg = await res.text();
+  if (src === 'sk' && svg.includes('undefined')) throw new Error(`icon ${key}: unknown id`);
+  writeFileSync(cache, svg);
+  return svg;
+}
+let uid = 0;
+// Returns a 256x256 inner drawing for the icon, with ids made unique.
+function iconBody(key, raw) {
+  const [src, id] = key.split(':');
+  const p = `i${++uid}_`;
+  if (src === 'sk') {
+    const inner = raw.match(/<g transform="translate\(0, 0\)">\s*<svg[^>]*>([\s\S]*?)<\/svg>\s*<\/g>/);
+    if (!inner) throw new Error(`icon ${key}: unexpected format`);
+    return inner[1]
+      .replace(/id="([^"]+)"/g, `id="${p}$1"`)
+      .replace(/url\(#([^)]+)\)/g, `url(#${p}$1)`)
+      .replace(/href="#([^"]+)"/g, `href="#${p}$1"`);
+  }
+  const d = raw.match(/<path d="([^"]+)"/)[1];
+  return `<rect width="256" height="256" fill="#242938" rx="60"/><g transform="translate(56 56) scale(6)"><path fill="#${SI_HEX[id]}" d="${d}"/></g>`;
+}
+
+const CW = 840, SPLIT = 604, IX0 = SPLIT + 24, ISIZE = 40, IGAP = 10, IPER = 4;
 function layout(p) {
   const desc = wrap(p.desc, 64), mine = wrap(p.mine, 72);
   let y = 114;
-  const descSvg = desc.map((l) => { const s = `<text x="32" y="${y}" fill="#C9D1D9" font-family="${SANS}" font-size="16">${esc(l)}</text>`; y += 23; return s; }).join('\n  ');
+  const descSvg = desc.map((l) => { const s = `<text x="32" y="${y}" fill="#D0D7DE" font-family="${SANS}" font-size="16">${esc(l)}</text>`; y += 23; return s; }).join('\n  ');
   y += 12;
   const arrowY = y;
-  const mineSvg = mine.map((l) => { const s = `<text x="52" y="${y}" fill="${C.gray}" font-family="${SANS}" font-size="14">${esc(l)}</text>`; y += 20; return s; }).join('\n  ');
-  let cx = CX0, cy = 62; const chips = [];
-  for (const c of p.chips) {
-    const w = Math.round(c.length * 7.6 + 24);
-    if (cx + w > CX1) { cx = CX0; cy += 34; }
-    chips.push(`<rect x="${cx}" y="${cy}" width="${w}" height="26" rx="13" fill="${C.panel}" stroke="#1E3A5F"/>
-  <text x="${cx + w / 2}" y="${cy + 17.5}" text-anchor="middle" fill="${C.blue}" font-family="${MONO}" font-size="12.5">${esc(c)}</text>`);
-    cx += w + 8;
-  }
-  return { descSvg, mineSvg, arrowY, chips, bottom: Math.max(y - 20 + 8, cy + 26) };
+  const mineSvg = mine.map((l) => { const s = `<text x="52" y="${y}" fill="#9BA3AE" font-family="${SANS}" font-size="14">${esc(l)}</text>`; y += 20; return s; }).join('\n  ');
+  const rows = Math.ceil(p.icons.length / IPER);
+  return { descSvg, mineSvg, arrowY, bottom: Math.max(y - 20 + 8, 62 + rows * (ISIZE + IGAP)) };
 }
-// Each card is on its own row, so height follows its own content (minimum 250).
 
 for (const p of projects) {
-  const W = CW, H = Math.max(250, layout(p).bottom + 26);
-  const { descSvg, mineSvg, arrowY, chips } = layout(p);
+  const t = THEMES[p.theme];
+  const L = layout(p);
+  const W = CW, H = Math.max(250, L.bottom + 26);
+  const icons = [];
+  for (const [n, [key, label]] of p.icons.entries()) {
+    const x = IX0 + (n % IPER) * (ISIZE + IGAP), y = 62 + Math.floor(n / IPER) * (ISIZE + IGAP);
+    icons.push(`<svg x="${x}" y="${y}" width="${ISIZE}" height="${ISIZE}" viewBox="0 0 256 256" role="img" aria-label="${esc(label)}">${iconBody(key, await loadIcon(key))}</svg>`);
+  }
   const corner = p.link
-    ? `<text x="${SPLIT - 28}" y="46" text-anchor="end" fill="${C.blue}" font-family="${SANS}" font-size="22">↗</text>`
-    : `<g transform="translate(${SPLIT - 46} 29)" fill="none" stroke="${C.gray}" stroke-width="1.6"><rect x="1" y="7" width="14" height="10" rx="2"/><path d="M4 7V5a4 4 0 0 1 8 0v2"/></g>`;
-  const stackLabel = `<line x1="${SPLIT}" y1="24" x2="${SPLIT}" y2="${H - 24}" stroke="${C.line}"/>
-  <text x="${CX0}" y="44" fill="${C.gray}" font-family="${MONO}" font-size="11.5" letter-spacing="1.2">STACK</text>`;
+    ? `<text x="${SPLIT - 28}" y="46" text-anchor="end" fill="${t.a1}" font-family="${SANS}" font-size="22">↗</text>`
+    : `<g transform="translate(${SPLIT - 46} 29)" fill="none" stroke="${t.a1}" stroke-opacity="0.8" stroke-width="1.6"><rect x="1" y="7" width="14" height="10" rx="2"/><path d="M4 7V5a4 4 0 0 1 8 0v2"/></g>`;
   save(join('projects', p.file), `
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t d">
   <title id="t">${esc(p.title)}</title>
-  <desc id="d">${esc(p.desc)} ${esc(p.mine)} Stack: ${esc(p.chips.join(', '))}.</desc>
-  <defs>${accentDef}</defs>
-  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="14" fill="${C.bg}" stroke="${C.line}"/>
-  <rect x="0" y="28" width="3" height="58" fill="url(#accent)"/>
-  <text x="32" y="45" fill="${C.blue}" font-family="${MONO}" font-size="12" letter-spacing="1.2">${esc(p.tag)}</text>
+  <desc id="d">${esc(p.desc)} ${esc(p.mine)} Stack: ${esc(p.icons.map((i) => i[1]).join(', '))}.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0.35" stop-color="${t.bg1}"/><stop offset="1" stop-color="${t.bg2}"/></linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${t.a1}"/><stop offset="1" stop-color="${t.a3}"/></linearGradient>
+    <linearGradient id="rule" x1="0" x2="1"><stop offset="0" stop-color="${t.a1}"/><stop offset="0.5" stop-color="${t.a3}"/><stop offset="1" stop-color="${t.a3}" stop-opacity="0"/></linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0" r="0.7"><stop offset="0" stop-color="${t.a1}" stop-opacity="0.16"/><stop offset="1" stop-color="${t.a1}" stop-opacity="0"/></radialGradient>
+    <clipPath id="clip"><rect width="${W}" height="${H}" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="${W}" height="${H}" fill="url(#bg)"/>
+    <rect width="${W}" height="${H}" fill="url(#glow)"/>
+    <rect x="0" y="0" width="${W}" height="2" fill="url(#rule)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="14" fill="none" stroke="${t.line}"/>
+  <rect x="0" y="28" width="3" height="58" fill="url(#bar)"/>
+  <text x="32" y="45" fill="${t.a2}" font-family="${MONO}" font-size="12" letter-spacing="1.2">${esc(p.tag)}</text>
   ${corner}
-  ${stackLabel}
+  <line x1="${SPLIT}" y1="24" x2="${SPLIT}" y2="${H - 24}" stroke="${t.line}"/>
+  <text x="${IX0}" y="44" fill="${t.a2}" fill-opacity="0.75" font-family="${MONO}" font-size="11.5" letter-spacing="1.2">STACK</text>
   <text x="32" y="80" fill="${C.white}" font-family="${SANS}" font-size="26" font-weight="700">${esc(p.title)}</text>
-  ${descSvg}
-  <text x="32" y="${arrowY}" fill="${C.blue}" font-family="${MONO}" font-size="14">→</text>
-  ${mineSvg}
-  ${chips.join('\n  ')}
+  ${L.descSvg}
+  <text x="32" y="${L.arrowY}" fill="${t.a1}" font-family="${MONO}" font-size="14">→</text>
+  ${L.mineSvg}
+  ${icons.join('\n  ')}
 </svg>`);
 }
 console.log('ok');

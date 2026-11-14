@@ -60,22 +60,22 @@ I care about the parts that make software trustworthy: idempotent operations, ve
 ## Projetos em destaque
 
 <p align="center">
-  <img src="./assets/projects/health-platform.svg?v=3" width="100%" alt="Plataforma de Saúde e Telessaúde (privado, projeto em equipe, full stack). Plataforma de uma clínica com planos por assinatura: telessaúde, agendamento de consultas e exames, laudos online, dependentes, planos para empresas e rede de afiliados, em app mobile e quatro portais web. Atuei no backend e no frontend: exames, guias e laudos; portal de empresas e importação de beneficiários; financeiro com saques, estornos e extratos; webhooks com fila; operadores, auditoria e testes E2E. Stack: NestJS, Vue 3, TypeScript, PostgreSQL, TypeORM, Capacitor, Playwright." />
+  <img src="./assets/projects/health-platform.svg?v=4" width="100%" alt="Plataforma de Saúde e Telessaúde (privado, projeto em equipe, full stack). Plataforma de uma clínica com planos por assinatura: telessaúde, agendamento de consultas e exames, laudos online, dependentes, planos para empresas e rede de afiliados, em app mobile e quatro portais web. Atuei no backend e no frontend: exames, guias e laudos; portal de empresas e importação de beneficiários; financeiro com saques, estornos e extratos; webhooks com fila; operadores, auditoria e testes E2E. Stack: NestJS, Vue 3, TypeScript, PostgreSQL, TypeORM, Capacitor, Playwright." />
 </p>
 <p align="center">
-  <a href="https://github.com/ubir4net0/PDV-sistemas_distribuidos"><img src="./assets/projects/distributed-pos.svg?v=3" width="100%" alt="PDV Distribuído (público, autoria própria, acadêmico). Checkout idempotente, reservas de estoque e mensageria com outbox/inbox. Stack: Java 21, Spring Boot, RabbitMQ, PostgreSQL, Flyway, React, TypeScript." /></a>
+  <a href="https://github.com/ubir4net0/PDV-sistemas_distribuidos"><img src="./assets/projects/distributed-pos.svg?v=4" width="100%" alt="PDV Distribuído (público, autoria própria, acadêmico). Checkout idempotente, reservas de estoque e mensageria com outbox/inbox. Stack: Java 21, Spring Boot, RabbitMQ, PostgreSQL, Flyway, React, TypeScript." /></a>
 </p>
 <p align="center">
-  <img src="./assets/projects/sales-crm.svg?v=3" width="100%" alt="CRM Comercial com integração EAD (privado, autoria própria). Funil de vendas, renovações pelo vencimento de certificados, metas e relatórios agendados por e-mail. Stack: Node.js, Fastify, Kysely, MySQL, Zod, React, TanStack Query." />
+  <img src="./assets/projects/sales-crm.svg?v=4" width="100%" alt="CRM Comercial com integração EAD (privado, autoria própria). Funil de vendas, renovações pelo vencimento de certificados, metas e relatórios agendados por e-mail. Stack: Node.js, Fastify, Kysely, MySQL, Zod, React, TanStack Query." />
 </p>
 <p align="center">
-  <a href="https://github.com/ubir4net0/boitatech"><img src="./assets/projects/boitatech.svg?v=3" width="100%" alt="BoitaTech (público, finalista do Inovatech 2026, 5º lugar). Monitoramento ambiental com mapas 2D/3D, denúncias cidadãs e ecopontos. Stack: Laravel, PostgreSQL, Leaflet, CesiumJS, MediaPipe, Tailwind." /></a>
+  <a href="https://github.com/ubir4net0/boitatech"><img src="./assets/projects/boitatech.svg?v=4" width="100%" alt="BoitaTech (público, finalista do Inovatech 2026, 5º lugar). Monitoramento ambiental com mapas 2D/3D, denúncias cidadãs e ecopontos. Stack: Laravel, PostgreSQL, Leaflet, CesiumJS, MediaPipe, Tailwind." /></a>
 </p>
 <p align="center">
-  <img src="./assets/projects/event-api.svg?v=3" width="100%" alt="API de Gestão de Eventos (privado, autoria própria). API de back-office para eventos esportivos com autenticação SPA, controle de acesso por perfil e integração com plataforma de ingressos. Stack: Laravel 13, Sanctum, PostgreSQL, Redis, Horizon, PHPUnit." />
+  <img src="./assets/projects/event-api.svg?v=4" width="100%" alt="API de Gestão de Eventos (privado, autoria própria). API de back-office para eventos esportivos com autenticação SPA, controle de acesso por perfil e integração com plataforma de ingressos. Stack: Laravel 13, Sanctum, PostgreSQL, Redis, Horizon, PHPUnit." />
 </p>
 <p align="center">
-  <a href="https://github.com/ubir4net0/acesso-facil"><img src="./assets/projects/acesso-facil.svg?v=3" width="100%" alt="Acesso Fácil (público, autoria própria). Encontre e avalie locais acessíveis em Manaus com mapa, painel analítico e suporte a VLibras. Stack: Laravel, MySQL, Leaflet, Chart.js, Tailwind, Alpine.js." /></a>
+  <a href="https://github.com/ubir4net0/acesso-facil"><img src="./assets/projects/acesso-facil.svg?v=4" width="100%" alt="Acesso Fácil (público, autoria própria). Encontre e avalie locais acessíveis em Manaus com mapa, painel analítico e suporte a VLibras. Stack: Laravel, MySQL, Leaflet, Chart.js, Tailwind, Alpine.js." /></a>
 </p>
 
 <p align="center"><sub>Projetos privados são descritos de forma genérica: nomes de clientes, código e infraestrutura permanecem confidenciais.</sub></p>
