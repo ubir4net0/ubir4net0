@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="250" viewBox="0 0 840 250" role="img" aria-labelledby="t d">
-  <title id="t">Health Benefits Platform</title>
-  <desc id="d">In-house replacement for a third-party SaaS: subscriptions, beneficiaries, clinic scheduling, exams and affiliate commissions across four portals. My part: immutable financial ledger, outbound webhooks, commission engine, migrations and Playwright E2E — 270+ commits. Stack: NestJS, TypeORM, PostgreSQL, Vue 3, Capacitor, Docker, Playwright.</desc>
+  <title id="t">Plataforma de Benefícios de Saúde</title>
+  <desc id="d">Substitui um SaaS de terceiros por uma plataforma própria: assinaturas, beneficiários, agenda de clínicas, exames e comissões de afiliados em quatro portais. Minha parte: ledger financeiro imutável, webhooks de saída, motor de comissões, migrations e testes E2E com Playwright — 270+ commits. Stack: NestJS, TypeORM, PostgreSQL, Vue 3, Capacitor, Docker, Playwright.</desc>
   <defs><linearGradient id="accent" x1="0" x2="1"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#00BFFF"/></linearGradient></defs>
   <rect x="0.5" y="0.5" width="839" height="249" rx="14" fill="#0D1117" stroke="#21262D"/>
   <rect x="0" y="28" width="3" height="58" fill="url(#accent)"/>
-  <text x="32" y="45" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12" letter-spacing="1.2">PRIVATE · TEAM PROJECT</text>
+  <text x="32" y="45" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12" letter-spacing="1.2">PRIVADO · PROJETO EM EQUIPE</text>
   <g transform="translate(558 29)" fill="none" stroke="#8B949E" stroke-width="1.6"><rect x="1" y="7" width="14" height="10" rx="2"/><path d="M4 7V5a4 4 0 0 1 8 0v2"/></g>
   <line x1="604" y1="24" x2="604" y2="226" stroke="#21262D"/>
   <text x="626" y="44" fill="#8B949E" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="11.5" letter-spacing="1.2">STACK</text>
-  <text x="32" y="80" fill="#F0F6FC" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Health Benefits Platform</text>
-  <text x="32" y="114" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">In-house replacement for a third-party SaaS: subscriptions,</text>
-  <text x="32" y="137" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">beneficiaries, clinic scheduling, exams and affiliate</text>
-  <text x="32" y="160" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">commissions across four portals.</text>
+  <text x="32" y="80" fill="#F0F6FC" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Plataforma de Benefícios de Saúde</text>
+  <text x="32" y="114" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">Substitui um SaaS de terceiros por uma plataforma própria:</text>
+  <text x="32" y="137" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">assinaturas, beneficiários, agenda de clínicas, exames e</text>
+  <text x="32" y="160" fill="#C9D1D9" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16">comissões de afiliados em quatro portais.</text>
   <text x="32" y="195" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="14">→</text>
-  <text x="52" y="195" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14">My part: immutable financial ledger, outbound webhooks, commission</text>
-  <text x="52" y="215" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14">engine, migrations and Playwright E2E — 270+ commits.</text>
+  <text x="52" y="195" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14">Minha parte: ledger financeiro imutável, webhooks de saída, motor de</text>
+  <text x="52" y="215" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14">comissões, migrations e testes E2E com Playwright — 270+ commits.</text>
   <rect x="626" y="62" width="70" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>
   <text x="661" y="79.5" text-anchor="middle" fill="#00BFFF" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12.5">NestJS</text>
   <rect x="704" y="62" width="77" height="26" rx="13" fill="#161B22" stroke="#1E3A5F"/>

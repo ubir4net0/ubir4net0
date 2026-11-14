@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/ubirajara-neto-005272327/"><img src="https://img.shields.io/badge/LinkedIn-161B22?style=for-the-badge" alt="LinkedIn" /></a>
   &nbsp;
-  <a href="#featured-projects"><img src="https://img.shields.io/badge/Projects-161B22?style=for-the-badge&logo=github&logoColor=00BFFF" alt="Featured projects" /></a>
+  <a href="#projetos-em-destaque"><img src="https://img.shields.io/badge/Projetos-161B22?style=for-the-badge&logo=github&logoColor=00BFFF" alt="Projetos em destaque" /></a>
 </p>
 
 <br />
@@ -16,11 +16,6 @@ I'm a full stack developer based in Manaus, Brazil. Most of my work is web syste
 
 I care about the parts that make software trustworthy: idempotent operations, versioned migrations, contracts written before code, and decisions recorded as ADRs. I work with AI coding agents (Claude Code) inside a spec → review → CI loop, never as a substitute for it.
 
-|                 |                                                                                              |
-| --------------- | -------------------------------------------------------------------------------------------- |
-| **Now**         | Contributing to a multi-portal health benefits platform: NestJS, Vue 3, PostgreSQL           |
-| **Recently**    | A sales CRM on a typed Fastify + Kysely API, and an event-driven POS in Spring Boot + RabbitMQ |
-| **Recognition** | Inovatech 2026 finalist (5th place) with BoitaTech                                           |
 
 <br />
 
@@ -62,28 +57,28 @@ I care about the parts that make software trustworthy: idempotent operations, ve
 
 <br />
 
-## Featured projects
+## Projetos em destaque
 
 <p align="center">
-  <img src="./assets/projects/health-platform.svg" width="100%" alt="Health Benefits Platform (private, team project). In-house replacement for a third-party SaaS across four portals. My part: immutable financial ledger, outbound webhooks, commission engine, migrations and Playwright E2E. Stack: NestJS, TypeORM, PostgreSQL, Vue 3, Capacitor, Docker, Playwright." />
+  <img src="./assets/projects/health-platform.svg" width="100%" alt="Plataforma de Benefícios de Saúde (privado, projeto em equipe). Plataforma própria com quatro portais para assinaturas, beneficiários, agenda de clínicas, exames e comissões de afiliados. Minha parte: ledger financeiro imutável, webhooks de saída, motor de comissões, migrations e testes E2E com Playwright. Stack: NestJS, TypeORM, PostgreSQL, Vue 3, Capacitor, Docker, Playwright." />
 </p>
 <p align="center">
-  <a href="https://github.com/ubir4net0/PDV-sistemas_distribuidos"><img src="./assets/projects/distributed-pos.svg" width="100%" alt="Distributed POS (public, solo, academic). Idempotent checkout, stock reservations and outbox/inbox messaging. Stack: Java 21, Spring Boot, RabbitMQ, PostgreSQL, Flyway, React, TypeScript." /></a>
+  <a href="https://github.com/ubir4net0/PDV-sistemas_distribuidos"><img src="./assets/projects/distributed-pos.svg" width="100%" alt="PDV Distribuído (público, autoria própria, acadêmico). Checkout idempotente, reservas de estoque e mensageria com outbox/inbox. Stack: Java 21, Spring Boot, RabbitMQ, PostgreSQL, Flyway, React, TypeScript." /></a>
 </p>
 <p align="center">
-  <img src="./assets/projects/sales-crm.svg" width="100%" alt="Sales CRM and LMS integration (private, solo). Sales pipeline, certificate-expiry renewals, goals and scheduled e-mail reports. Stack: Node.js, Fastify, Kysely, MySQL, Zod, React, TanStack Query." />
+  <img src="./assets/projects/sales-crm.svg" width="100%" alt="CRM Comercial com integração EAD (privado, autoria própria). Funil de vendas, renovações pelo vencimento de certificados, metas e relatórios agendados por e-mail. Stack: Node.js, Fastify, Kysely, MySQL, Zod, React, TanStack Query." />
 </p>
 <p align="center">
-  <a href="https://github.com/ubir4net0/boitatech"><img src="./assets/projects/boitatech.svg" width="100%" alt="BoitaTech (public, Inovatech 2026 finalist, 5th place). Environmental monitoring with 2D/3D maps, citizen reports and recycling points. Stack: Laravel, PostgreSQL, Leaflet, CesiumJS, MediaPipe, Tailwind." /></a>
+  <a href="https://github.com/ubir4net0/boitatech"><img src="./assets/projects/boitatech.svg" width="100%" alt="BoitaTech (público, finalista do Inovatech 2026, 5º lugar). Monitoramento ambiental com mapas 2D/3D, denúncias cidadãs e ecopontos. Stack: Laravel, PostgreSQL, Leaflet, CesiumJS, MediaPipe, Tailwind." /></a>
 </p>
 <p align="center">
-  <img src="./assets/projects/event-api.svg" width="100%" alt="Event Operations API (private, solo). Back-office API for sports events with SPA auth, role-based access and a ticketing integration. Stack: Laravel 13, Sanctum, PostgreSQL, Redis, Horizon, PHPUnit." />
+  <img src="./assets/projects/event-api.svg" width="100%" alt="API de Gestão de Eventos (privado, autoria própria). API de back-office para eventos esportivos com autenticação SPA, controle de acesso por perfil e integração com plataforma de ingressos. Stack: Laravel 13, Sanctum, PostgreSQL, Redis, Horizon, PHPUnit." />
 </p>
 <p align="center">
-  <a href="https://github.com/ubir4net0/acesso-facil"><img src="./assets/projects/acesso-facil.svg" width="100%" alt="Acesso Fácil (public, solo). Find and rate accessible places in Manaus with a map, dashboard and VLibras support. Stack: Laravel, MySQL, Leaflet, Chart.js, Tailwind, Alpine.js." /></a>
+  <a href="https://github.com/ubir4net0/acesso-facil"><img src="./assets/projects/acesso-facil.svg" width="100%" alt="Acesso Fácil (público, autoria própria). Encontre e avalie locais acessíveis em Manaus com mapa, painel analítico e suporte a VLibras. Stack: Laravel, MySQL, Leaflet, Chart.js, Tailwind, Alpine.js." /></a>
 </p>
 
-<p align="center"><sub>Private projects are described generically: client names, code and infrastructure stay confidential.</sub></p>
+<p align="center"><sub>Projetos privados são descritos de forma genérica: nomes de clientes, código e infraestrutura permanecem confidenciais.</sub></p>
 
 <br />
 
