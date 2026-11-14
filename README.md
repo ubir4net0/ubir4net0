@@ -14,7 +14,7 @@
 
 I'm a full stack developer based in Manaus, Brazil. Most of my work is web systems built end to end: Laravel and NestJS APIs, Vue and React interfaces, relational data models in PostgreSQL and MySQL, and the tests and CI that keep them shippable.
 
-I care about the parts that make software trustworthy: idempotent operations, versioned migrations, contracts written before code, and decisions recorded as ADRs. I work with AI coding agents (Claude Code) inside a spec → review → CI loop, never as a substitute for it.
+I care about the parts that make software trustworthy: idempotent operations, versioned migrations, contracts written before code, and decisions recorded as ADRs.
 
 
 <br />
