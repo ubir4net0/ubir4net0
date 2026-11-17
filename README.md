@@ -66,6 +66,9 @@ I care about the parts that make software trustworthy: idempotent operations, ve
   <a href="https://github.com/ubir4net0/PDV-sistemas_distribuidos"><img src="./assets/projects/distributed-pos-e355f794.svg" width="100%" alt="PDV Distribuído (público, autoria própria, acadêmico). Checkout idempotente, reservas de estoque e mensageria com outbox/inbox. Stack: Java 21, Spring Boot, RabbitMQ, PostgreSQL, Flyway, React, TypeScript." /></a>
 </p>
 <p align="center">
+  <a href="https://github.com/ubir4net0/Jogo-Sistemas-Digitais"><img src="./assets/projects/smart-parking-3d-54d2368d.svg" width="100%" alt="Smart Parking 3D (público, autoria própria, acadêmico). Gêmeo digital 3D de um estacionamento inteligente para Sistemas Digitais: carros 3D, cancelas, sensores binários, contador de 4 bits, display de 7 segmentos e máquinas de estados, com motor lógico testado. Stack: React, TypeScript, Three.js, Vite, Tailwind CSS, Vitest." /></a>
+</p>
+<p align="center">
   <img src="./assets/projects/sales-crm-48bb0eb9.svg" width="100%" alt="CRM Comercial com integração EAD (privado, autoria própria). Funil de vendas, renovações pelo vencimento de certificados, metas e relatórios agendados por e-mail. Stack: Node.js, Fastify, Kysely, MySQL, Zod, React, TanStack Query." />
 </p>
 <p align="center">

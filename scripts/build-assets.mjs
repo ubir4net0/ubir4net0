@@ -176,6 +176,7 @@ const THEMES = {
   forest: { bg1: '#0D1117', bg2: '#081A10', line: '#14462A', a1: '#22C55E', a2: '#4ADE80', a3: '#86EFAC' },
   volt:   { bg1: '#0D1117', bg2: '#17150A', line: '#3A3414', a1: '#FFCE28', a2: '#FFCE28', a3: '#12E07A' },
   access: { bg1: '#0D1117', bg2: '#0B1426', line: '#1E3358', a1: '#3B82F6', a2: '#60A5FA', a3: '#22C55E' },
+  circuit: { bg1: '#0D1117', bg2: '#0A1622', line: '#163049', a1: '#2F8CFF', a2: '#38BDF8', a3: '#FACC15' },
 };
 
 const SI_HEX = { typeorm: 'FE0803', capacitor: '119EFF', flyway: 'CC0200', fastify: 'FFFFFF', zod: '408AFF', tanstack: 'ECE8D1', leaflet: '199900', cesium: '6CADDF', mediapipe: '0097A7', chartdotjs: 'FF6384', alpinedotjs: '8BC0D0' };
@@ -216,6 +217,12 @@ const projects = [
     desc: 'Encontre e avalie locais acessíveis em Manaus: mapa interativo, painel analítico, avaliações e suporte a Libras com VLibras.',
     mine: 'Desenvolvido para o Inovatech: indicadores de acessibilidade, agrupamento de marcadores no mapa e gráficos.',
     icons: [['sk:laravel', 'Laravel'], ['sk:php', 'PHP'], ['sk:mysql', 'MySQL'], ['si:leaflet', 'Leaflet'], ['si:chartdotjs', 'Chart.js'], ['si:alpinedotjs', 'Alpine.js'], ['sk:tailwind', 'Tailwind CSS']],
+  },
+  {
+    file: 'smart-parking-3d.svg', theme: 'circuit', tag: 'PÚBLICO · AUTORIA PRÓPRIA · ACADÊMICO', title: 'Smart Parking 3D', link: true,
+    desc: 'Gêmeo digital 3D de um estacionamento inteligente para Sistemas Digitais: carros 3D, cancelas, sensores binários, contador de 4 bits e máquinas de estados.',
+    mine: 'Motor lógico em TypeScript puro, separado da cena: portas AND/OR/NOT/XOR nas regras, contador em cascata e 55 testes que checam colisões e invariantes a cada quadro.',
+    icons: [['sk:react', 'React'], ['sk:ts', 'TypeScript'], ['sk:threejs', 'Three.js'], ['sk:vite', 'Vite'], ['sk:tailwind', 'Tailwind CSS'], ['sk:vitest', 'Vitest']],
   },
 ];
 
