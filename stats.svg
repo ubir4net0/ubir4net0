@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="190" viewBox="0 0 840 190" role="img" aria-labelledby="t d">
+  <title id="t">GitHub activity for ubir4net0</title>
+  <desc id="d">842 contributions and 146 active days in the last 12 months; current streak 33 days; longest streak 33 days. Busiest day 2026-11-25 with 56 contributions.</desc>
+  <defs>
+    <linearGradient id="accent" x1="0" x2="1"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#00BFFF"/></linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="839" height="189" rx="14" fill="#0D1117" stroke="#21262D"/>
+  <rect x="24" y="24" width="3" height="18" rx="1.5" fill="url(#accent)"/>
+  <text x="36" y="39" fill="#F0F6FC" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="16" font-weight="600">GitHub activity</text>
+  <text x="816" y="39" text-anchor="end" fill="#8B949E" font-family="'JetBrains Mono', 'Cascadia Code', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12">updated 2026-11-28 · public + private contributions</text>
+  
+  <text x="44" y="118" fill="#F0F6FC" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="38" font-weight="700">842</text>
+  <text x="44" y="142" fill="#00BFFF" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Contributions</text>
+  <text x="44" y="160" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="12">last 12 months</text>
+<line x1="222" y1="70" x2="222" y2="160" stroke="#21262D"/>
+  <text x="242" y="118" fill="#F0F6FC" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="38" font-weight="700">146</text>
+  <text x="242" y="142" fill="#00BFFF" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Active days</text>
+  <text x="242" y="160" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="12">last 12 months</text>
+<line x1="420" y1="70" x2="420" y2="160" stroke="#21262D"/>
+  <text x="440" y="118" fill="#F0F6FC" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="38" font-weight="700">33</text>
+  <text x="440" y="142" fill="#00BFFF" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Current streak</text>
+  <text x="440" y="160" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="12">days</text>
+<line x1="618" y1="70" x2="618" y2="160" stroke="#21262D"/>
+  <text x="638" y="118" fill="#F0F6FC" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="38" font-weight="700">33</text>
+  <text x="638" y="142" fill="#00BFFF" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Longest streak</text>
+  <text x="638" y="160" fill="#8B949E" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="12">days · last 12 months</text>
+</svg>
